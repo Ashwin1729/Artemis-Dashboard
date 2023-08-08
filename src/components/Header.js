@@ -43,7 +43,7 @@ const Header = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </Col>
-      <Col sm={6} md={5} lg={4} xl={3} xxl={2}>
+      <Col xs={12} sm={6} md={5} lg={4} xl={3} xxl={2}>
         <Row className={styles.icons_container}>
           <Col className={styles.headerIcon}>
             <Dropdown
@@ -96,7 +96,6 @@ const Header = () => {
               </a>
             </Dropdown>
           </Col>
-          <Col className={styles.headerIcon}></Col>
         </Row>
       </Col>
       <Col sm={7} md={6} lg={5} xl={4} xxl={3}>

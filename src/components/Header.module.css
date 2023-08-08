@@ -10,7 +10,7 @@
 
 .icons_container {
   display: flex;
-  justify-content: right;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -38,7 +38,7 @@
 
 .headerIcon {
   color: gray;
-  margin-left: 1.1rem;
+  /* margin-left: 1.1rem; */
   display: flex;
   justify-content: center;
   align-items: center;

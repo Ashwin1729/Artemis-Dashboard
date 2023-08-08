@@ -146,9 +146,7 @@
   .ant-layout-sider-zero-width-trigger {
     top: 0px;
   }
-  .ant-layout .site-layout {
-    margin-top: 42px;
-  }
+
   .logo-collapsed {
     font-size: calc(1vw + 0.5rem);
     font-weight: 500;

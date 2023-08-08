@@ -14,11 +14,12 @@
 
 .designation {
   color: #969696;
-  font-size: small;
+  font-size: calc(0.8vw + 0.01rem);
 }
 
 .name {
   font-weight: 500;
+  font-size: calc(1vw + 0.01rem);
 }
 
 .center {

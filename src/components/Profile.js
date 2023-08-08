@@ -24,8 +24,16 @@ const profileDropdown = [
 
 const Profile = () => {
   return (
-    <Row className={styles.profile_container}>
-      <Col xs={12} className={styles.profile_data}>
+    <Row
+      xs={12}
+      sm={6}
+      md={5}
+      lg={4}
+      xl={3}
+      xxl={2}
+      className={styles.profile_container}
+    >
+      <Col xs={15} className={styles.profile_data}>
         <Row className={styles.name}>Thomas Brown</Row>
         <Row className={styles.designation}>Developer</Row>
       </Col>
