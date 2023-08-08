@@ -1,0 +1,43 @@
+.profile_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.profile_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.designation {
+  color: #969696;
+  font-size: small;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_tools > ul {
+  bottom: -18px;
+}
+
+.dropdown_icon {
+  font-size: x-small;
+  color: gray;
+}
+
+.profile_pic {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+}

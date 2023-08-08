@@ -3,7 +3,6 @@ import { Layout, Menu, Row } from "antd";
 import {
   PieChartOutlined,
   FileOutlined,
-  TeamOutlined,
   UserOutlined,
   AppstoreOutlined,
   QuestionCircleOutlined,

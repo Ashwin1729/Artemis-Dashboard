@@ -95,10 +95,6 @@
   width: 100%;
 }
 
-.color-shade {
-  color: #969696;
-}
-
 .total-income-wrapper {
   background: white;
   padding: 10px;
@@ -116,12 +112,6 @@
 
 .bold {
   font-weight: 500;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .h-100 {
@@ -215,10 +205,6 @@
 .loader {
   height: 100vh;
   background: #000000;
-}
-
-.navbar-tools > ul {
-  bottom: -18px;
 }
 
 .toggle {

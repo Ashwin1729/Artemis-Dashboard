@@ -1,0 +1,54 @@
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.icons_container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbar_tools > ul {
+  bottom: -18px;
+}
+
+.searchBarIcon {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color_shade {
+  color: #969696;
+}
+
+.searchBarInput {
+  border: none;
+  color: gray;
+  width: 50%;
+  padding: 5px 10px;
+}
+
+.headerIcon {
+  color: gray;
+  margin-left: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant_layout_header {
+  line-height: normal !important;
+}
+
+.settings_icon {
+  font-size: large;
+  color: gray;
+}

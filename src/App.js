@@ -17,8 +17,9 @@ import {
 import { Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import SideBar from "./components/SideBar";
+import Header from "./components/Header";
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
 const App = () => {
@@ -34,6 +35,10 @@ const App = () => {
   return (
     <Layout style={{ minHeight: "100vh" }} ref={layoutRef}>
       <SideBar />
+
+      <Layout className="site-layout" theme="light">
+        <Header />
+      </Layout>
     </Layout>
   );
 };
