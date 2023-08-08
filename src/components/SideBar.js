@@ -50,18 +50,20 @@ const SideBar = () => {
         Artemis
       </div>
       <div className={styles.divider}></div>
-      <Row className={styles.headliners}>
-        <div
-          style={{
-            fontSize: `${collapsed ? ".3rem" : "0.7rem"}`,
-            color: "black",
-            opacity: 0.5,
-          }}
-        >
-          MAIN
-        </div>
-      </Row>
-      <Menu theme="light" defaultSelectedKeys={["1"]} mode="inline">
+
+      <Menu defaultSelectedKeys={["1"]} mode="inline">
+        <Row className={styles.headliners}>
+          <div
+            style={{
+              fontSize: `${collapsed ? ".3rem" : "0.7rem"}`,
+              color: "black",
+              opacity: 0.5,
+            }}
+          >
+            MAIN
+          </div>
+        </Row>
+
         <Menu.Item key="1" icon={<PieChartOutlined />}>
           <Link to="/dashboard"> Dashboard </Link>
         </Menu.Item>
@@ -69,21 +71,21 @@ const SideBar = () => {
           <Link to="/discover">Discover</Link>
         </Menu.Item>
         <SubMenu key="sub1" icon={<UserOutlined />} title="Users">
-          <Menu.Item key="3">Tom</Menu.Item>
-          <Menu.Item key="4">Bill</Menu.Item>
-          <Menu.Item key="5">Alex</Menu.Item>
+          <Menu.Item key="3">User 1</Menu.Item>
+          <Menu.Item key="4">User 2</Menu.Item>
+          <Menu.Item key="5">User 3</Menu.Item>
         </SubMenu>
         <SubMenu key="sub2" icon={<SnippetsOutlined />} title="Documents">
-          <Menu.Item key="8">Doc1</Menu.Item>
-          <Menu.Item key="9">Doc2</Menu.Item>
+          <Menu.Item key="6">Document 1</Menu.Item>
+          <Menu.Item key="7">Document 2</Menu.Item>
         </SubMenu>
         <SubMenu key="sub3" icon={<AppstoreOutlined />} title=" Applications">
-          <Menu.Item key="8">Doc1</Menu.Item>
-          <Menu.Item key="9">Doc2</Menu.Item>
+          <Menu.Item key="8">Application 1</Menu.Item>
+          <Menu.Item key="9">Application 2</Menu.Item>
         </SubMenu>
         <SubMenu key="sub4" icon={<FileOutlined />} title="Pages">
-          <Menu.Item key="10">Page1</Menu.Item>
-          <Menu.Item key="11">Page2</Menu.Item>
+          <Menu.Item key="10">Page 1</Menu.Item>
+          <Menu.Item key="11">Page 2</Menu.Item>
         </SubMenu>
 
         <Row className={styles.headliners}>
