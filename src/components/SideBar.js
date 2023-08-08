@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Layout, Menu, Row } from "antd";
 import {
-  DesktopOutlined,
   PieChartOutlined,
   FileOutlined,
   TeamOutlined,
@@ -13,9 +12,12 @@ import {
   BarsOutlined,
   SettingOutlined,
   LogoutOutlined,
+  GlobalOutlined,
+  SnippetsOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import styles from "./SideBar.module.css";
+import artemis_logo from "../assets/artemis_logo.png";
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
@@ -45,6 +47,7 @@ const SideBar = () => {
           color: "black",
         }}
       >
+        <img src={artemis_logo} alt="artemis_logo" />
         Artemis
       </div>
       <div className={styles.divider}></div>
@@ -63,7 +66,7 @@ const SideBar = () => {
         <Menu.Item key="1" icon={<PieChartOutlined />}>
           <Link to="/dashboard"> Dashboard </Link>
         </Menu.Item>
-        <Menu.Item key="2" icon={<DesktopOutlined />}>
+        <Menu.Item key="2" icon={<GlobalOutlined />}>
           <Link to="/discover">Discover</Link>
         </Menu.Item>
         <SubMenu key="sub1" icon={<UserOutlined />} title="Users">
@@ -71,7 +74,7 @@ const SideBar = () => {
           <Menu.Item key="4">Bill</Menu.Item>
           <Menu.Item key="5">Alex</Menu.Item>
         </SubMenu>
-        <SubMenu key="sub2" icon={<TeamOutlined />} title="Documents">
+        <SubMenu key="sub2" icon={<SnippetsOutlined />} title="Documents">
           <Menu.Item key="8">Doc1</Menu.Item>
           <Menu.Item key="9">Doc2</Menu.Item>
         </SubMenu>
