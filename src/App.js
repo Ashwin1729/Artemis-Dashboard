@@ -14,10 +14,11 @@ import {
   SettingOutlined,
   LogoutOutlined,
 } from "@ant-design/icons";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
+import Dashboard from "./components/Dashboard";
 
 const { Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -40,6 +41,18 @@ const App = () => {
         <div className="header-wrapper">
           <Header />
         </div>
+        <Content>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+          </Routes>
+        </Content>
+        <Footer
+          style={{
+            textAlign: "center",
+          }}
+        >
+          Artemis Dashboard ©2023 Created by Ashwin Dhuriya
+        </Footer>
       </Layout>
     </Layout>
   );

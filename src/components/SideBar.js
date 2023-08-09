@@ -65,7 +65,7 @@ const SideBar = () => {
         </Row>
 
         <Menu.Item key="1" icon={<PieChartOutlined />}>
-          <Link to="/dashboard"> Dashboard </Link>
+          <Link to="/"> Dashboard </Link>
         </Menu.Item>
         <Menu.Item key="2" icon={<GlobalOutlined />}>
           <Link to="/discover">Discover</Link>

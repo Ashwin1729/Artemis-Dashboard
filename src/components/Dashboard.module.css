@@ -1,0 +1,10 @@
+.dashboard_layout {
+  padding: 20px 16% 0px 10%;
+  background: #f0f2f5;
+}
+
+.dashboard_graphs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
