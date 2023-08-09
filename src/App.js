@@ -37,7 +37,9 @@ const App = () => {
       <SideBar />
 
       <Layout className="site-layout" theme="light">
-        <Header />
+        <div className="header-wrapper">
+          <Header />
+        </div>
       </Layout>
     </Layout>
   );

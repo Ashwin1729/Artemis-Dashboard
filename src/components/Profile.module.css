@@ -19,7 +19,7 @@
 
 .name {
   font-weight: 500;
-  font-size: calc(1vw + 0.01rem);
+  font-size: calc(0.5vw + 0.4rem);
 }
 
 .center {
