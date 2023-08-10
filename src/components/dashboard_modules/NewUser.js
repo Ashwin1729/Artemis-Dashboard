@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Badge from "./Badge";
+import Badge from "../Badge";
 import { Row, Col, Dropdown } from "antd";
 import { EllipsisOutlined } from "@ant-design/icons";
 import { useCountUp } from "react-countup";
@@ -49,19 +49,17 @@ const NewUser = () => {
   return (
     <div className={styles.user_container}>
       <Row className={styles.user_data}>
-        <div className={styles.user_data}>
-          <Col xs={20}>New Users</Col>
-          <Col xs={1}>
-            <Dropdown
-              menu={{
-                items: profileDropdown,
-              }}
-              trigger={["click"]}
-            >
-              <EllipsisOutlined className={styles.options} />
-            </Dropdown>
-          </Col>
-        </div>
+        <Col xs={20}>New Users</Col>
+        <Col xs={1}>
+          <Dropdown
+            menu={{
+              items: profileDropdown,
+            }}
+            trigger={["click"]}
+          >
+            <EllipsisOutlined className={styles.options} />
+          </Dropdown>
+        </Col>
       </Row>
 
       <Row className={styles.user_count}>
