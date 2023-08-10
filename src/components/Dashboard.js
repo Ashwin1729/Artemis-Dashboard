@@ -10,7 +10,7 @@ const Dashboard = () => {
     <div className={styles.dashboard_layout}>
       <Row className={styles.dashboard_graphs}>
         <Col xs={24} lg={12} className={styles.income_layout}>
-          <Row>
+          <Row className={styles.user_layout}>
             <div>Total Income</div>
           </Row>
           <Row className={styles.user_layout}>

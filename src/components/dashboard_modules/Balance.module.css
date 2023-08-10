@@ -1,13 +1,13 @@
 .balance_container {
   background: white;
-  padding: 20px 35px;
+  /* padding: 20px 35px; */
   border-radius: 5px;
   width: 100%;
   margin: 10px;
 }
 
 .balance_header {
-  padding: 10px 3px;
+  padding: 30px 35px 10px 40px;
   width: 100%;
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 3px;
+  padding: 5px 35px;
 }
 
 .earnings_card1 {
@@ -49,4 +49,6 @@
 }
 
 .line_chart {
+  margin-top: 4rem;
+  height: 200px;
 }

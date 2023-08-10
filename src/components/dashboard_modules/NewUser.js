@@ -4,7 +4,7 @@ import { Row, Col, Dropdown } from "antd";
 import { EllipsisOutlined } from "@ant-design/icons";
 import { useCountUp } from "react-countup";
 import styles from "./NewUser.module.css";
-import BarChart from "./BarChart";
+import BarChart from "../charts/BarChart";
 import { Chart, registerables } from "chart.js";
 
 Chart.register(...registerables);

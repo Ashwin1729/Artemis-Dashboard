@@ -1,33 +1,31 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Row, Col, Dropdown, Button } from "antd";
+import { Row, Col, Dropdown, Button, Select } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { useCountUp } from "react-countup";
 import styles from "./Balance.module.css";
 import Badge from "../Badge";
 import { Chart, registerables } from "chart.js";
+import LineChart from "../charts/LineChart";
 
 Chart.register(...registerables);
 
-const profileDropdown = [
+const periodDropdown = [
   {
-    label: <a href="#">1st menu item</a>,
-    key: "0",
+    value: "monthly",
+    label: "Monthly",
   },
   {
-    label: <a href="#">2nd menu item</a>,
-    key: "1",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: "3rd menu item",
-    key: "3",
+    value: "yearly",
+    label: "Yearly",
   },
 ];
 
 const Balance = () => {
   const [width, setWidth] = useState(0);
+  const [lineLabels, setLineLabels] = useState([]);
+  const [lineData, setLineData] = useState([]);
+  const [period, setPeriod] = useState("monthly");
+
   const earningsRef = useRef();
   const salesValueRef = useRef();
 
@@ -56,7 +54,52 @@ const Balance = () => {
       let style = getComputedStyle(document.querySelector("body"));
       setWidth(parseInt(style.width));
     });
+
+    setLineLabels(["", "", "", "", "", "", "", "", "", "", "", ""]);
+    setLineData([53, 20, 10, 70, 32, 45, 55, 20, 15, 100, 48, 23]);
   }, []);
+
+  useEffect(() => {
+    if (period === "monthly") {
+      setLineLabels(["", "", "", "", "", "", "", "", "", "", "", ""]);
+      setLineData([53, 20, 10, 70, 32, 45, 55, 20, 15, 100, 48, 23]);
+    } else if (period === "yearly") {
+      setLineLabels([
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+      ]);
+      setLineData([
+        65, 55, 60, 55, 75, 90, 12, 58, 96, 102, 153, 90, 120, 170, 60, 50, 78,
+        96, 36, 24, 36, 145, 32, 78,
+      ]);
+    }
+  }, [period]);
+
+  const periodHandler = (value) => {
+    setPeriod(value);
+  };
 
   return (
     <div className={styles.balance_container}>
@@ -65,7 +108,7 @@ const Balance = () => {
           Balance
         </Col>
         <Col xs={7} style={{ textAlign: "end" }}>
-          <Dropdown
+          {/* <Dropdown
             menu={{
               items: profileDropdown,
             }}
@@ -74,7 +117,13 @@ const Balance = () => {
             <Button className="color-shade">
               Monthly <DownOutlined style={{ color: "black" }} />
             </Button>
-          </Dropdown>
+          </Dropdown> */}
+          <Select
+            defaultValue="monthly"
+            onChange={periodHandler}
+            options={periodDropdown}
+            value={period}
+          />
         </Col>
       </Row>
       <div className={styles.divider}></div>
@@ -100,7 +149,13 @@ const Balance = () => {
         </Col>
       </Row>
 
-      <Row className={styles.line_chart}>{/* Line chart */}</Row>
+      <Row className={styles.line_chart}>
+        <LineChart
+          label={lineLabels}
+          data={lineData}
+          title="Earnings increase count in past months ($)"
+        />
+      </Row>
     </div>
   );
 };

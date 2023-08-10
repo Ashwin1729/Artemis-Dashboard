@@ -56,11 +56,6 @@
   background-color: #f0f2f5;
 }
 
-.dashboard {
-  padding: 20px 16% 0px 10%;
-  background: #f0f2f5;
-}
-
 .transaction-wrapper {
   background: white;
 }
@@ -173,10 +168,6 @@
 .toggle {
   justify-content: center;
   margin-top: 5px;
-}
-
-.site-layout .site-layout-background {
-  background: #fff;
 }
 
 .ant-tabs-top {
