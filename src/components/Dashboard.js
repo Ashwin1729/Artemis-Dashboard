@@ -4,6 +4,7 @@ import { Row, Col } from "antd";
 import NewUser from "./dashboard_modules/NewUser";
 import styles from "./Dashboard.module.css";
 import Balance from "./dashboard_modules/Balance";
+import Income from "./dashboard_modules/Income";
 
 const Dashboard = () => {
   return (
@@ -11,7 +12,7 @@ const Dashboard = () => {
       <Row className={styles.dashboard_graphs}>
         <Col xs={24} lg={12} className={styles.income_layout}>
           <Row className={styles.user_layout}>
-            <div>Total Income</div>
+            <Income />
           </Row>
           <Row className={styles.user_layout}>
             <NewUser />

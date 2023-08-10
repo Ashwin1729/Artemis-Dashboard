@@ -108,16 +108,6 @@ const Balance = () => {
           Balance
         </Col>
         <Col xs={7} style={{ textAlign: "end" }}>
-          {/* <Dropdown
-            menu={{
-              items: profileDropdown,
-            }}
-            trigger={["click"]}
-          >
-            <Button className="color-shade">
-              Monthly <DownOutlined style={{ color: "black" }} />
-            </Button>
-          </Dropdown> */}
           <Select
             defaultValue="monthly"
             onChange={periodHandler}
