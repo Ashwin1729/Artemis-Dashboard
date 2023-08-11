@@ -22,19 +22,6 @@
   text-align: end;
 }
 
-.badge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0.2rem;
-  padding: 1px;
-  font-size: small;
-  color: white;
-  font-weight: 400;
-  border-radius: 500px;
-  width: 5rem;
-}
-
 .tab {
   padding: 0px 10px;
   margin: 0px 20px;

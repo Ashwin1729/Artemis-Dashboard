@@ -1,26 +1,9 @@
 import React from "react";
-import { Row, Col, Dropdown, Menu } from "antd";
+import { Row, Col, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import styles from "./Profile.module.css";
 import profile_pic from "../assets/profile_pic.jpg";
-
-const profileDropdown = [
-  {
-    label: <a href="#">1st menu item</a>,
-    key: "0",
-  },
-  {
-    label: <a href="#">2nd menu item</a>,
-    key: "1",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: "3rd menu item",
-    key: "3",
-  },
-];
+import { profileDropdown } from "../utilities/utils";
 
 const Profile = () => {
   return (

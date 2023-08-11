@@ -38,7 +38,6 @@ const SideBar = () => {
       collapsedWidth={0}
       width="300px"
       theme="light"
-      // width={width > 600 ? "300px" : "200px"}
     >
       <div
         className={!collapsed ? styles.logo : styles.logo_collapsed}

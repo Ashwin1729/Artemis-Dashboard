@@ -5,25 +5,12 @@ import { BsSearch } from "react-icons/bs";
 import { Row, Col, Input, Dropdown } from "antd";
 import { SettingOutlined } from "@ant-design/icons";
 import Profile from "./Profile";
+import {
+  notificationDropdown,
+  messageDropdown,
+  settingsDropdown,
+} from "../utilities/utils";
 import styles from "./Header.module.css";
-
-const profileDropdown = [
-  {
-    label: <a href="#">1st menu item</a>,
-    key: "0",
-  },
-  {
-    label: <a href="#">2nd menu item</a>,
-    key: "1",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: "3rd menu item",
-    key: "3",
-  },
-];
 
 const Header = () => {
   const [search, setSearch] = useState("");
@@ -48,7 +35,7 @@ const Header = () => {
           <Col className={styles.headerIcon}>
             <Dropdown
               menu={{
-                items: profileDropdown,
+                items: settingsDropdown,
               }}
               trigger={["click"]}
               placement="bottomRight"
@@ -65,7 +52,7 @@ const Header = () => {
           <Col className={styles.headerIcon}>
             <Dropdown
               menu={{
-                items: profileDropdown,
+                items: messageDropdown,
               }}
               trigger={["click"]}
               placement="bottomRight"
@@ -82,7 +69,7 @@ const Header = () => {
           <Col className={styles.headerIcon}>
             <Dropdown
               menu={{
-                items: profileDropdown,
+                items: notificationDropdown,
               }}
               trigger={["click"]}
               placement="bottomRight"

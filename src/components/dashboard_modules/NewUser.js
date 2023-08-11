@@ -6,26 +6,9 @@ import { useCountUp } from "react-countup";
 import styles from "./NewUser.module.css";
 import BarChart from "../charts/BarChart";
 import { Chart, registerables } from "chart.js";
+import { usersDropdown } from "../../utilities/utils";
 
 Chart.register(...registerables);
-
-const profileDropdown = [
-  {
-    label: <a href="#">1st menu item</a>,
-    key: "0",
-  },
-  {
-    label: <a href="#">2nd menu item</a>,
-    key: "1",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: "3rd menu item",
-    key: "3",
-  },
-];
 
 const NewUser = () => {
   const [barLabels, setBarLabels] = useState([]);
@@ -53,7 +36,7 @@ const NewUser = () => {
         <Col xs={1}>
           <Dropdown
             menu={{
-              items: profileDropdown,
+              items: usersDropdown,
             }}
             trigger={["click"]}
           >

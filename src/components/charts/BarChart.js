@@ -1,8 +1,9 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
-import Chart from "chart.js/auto";
 
 const BarChart = ({ label, data }) => {
+  // Custom Plugin for Bar Chart background fill color
+
   const backgroundBar = {
     id: "backgroundBar",
     beforeDatasetsDraw(chart, args, pluginOptions) {

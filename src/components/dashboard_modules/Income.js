@@ -5,26 +5,9 @@ import { EllipsisOutlined } from "@ant-design/icons";
 import { useCountUp } from "use-count-up";
 import styles from "./Income.module.css";
 import { Chart, registerables } from "chart.js";
+import { incomeDropdown } from "../../utilities/utils";
 
 Chart.register(...registerables);
-
-const profileDropdown = [
-  {
-    label: <a href="#">1st menu item</a>,
-    key: "0",
-  },
-  {
-    label: <a href="#">2nd menu item</a>,
-    key: "1",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: "3rd menu item",
-    key: "3",
-  },
-];
 
 const Income = () => {
   const userCountRef = useRef();
@@ -54,7 +37,7 @@ const Income = () => {
         <Col xs={1}>
           <Dropdown
             menu={{
-              items: profileDropdown,
+              items: incomeDropdown,
             }}
             trigger={["click"]}
           >

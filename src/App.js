@@ -1,37 +1,16 @@
-import React, { useState, useRef } from "react";
-import { Layout, Menu, Breadcrumb, Row, Col, Switch as Switchs } from "antd";
-import {
-  DesktopOutlined,
-  PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
-  UserOutlined,
-  AppstoreOutlined,
-  QuestionCircleOutlined,
-  InboxOutlined,
-  FolderOpenOutlined,
-  BarsOutlined,
-  SettingOutlined,
-  LogoutOutlined,
-} from "@ant-design/icons";
+import React, { useRef } from "react";
+import { Layout } from "antd";
+
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import Dashboard from "./components/Dashboard";
 
-const { Content, Footer, Sider } = Layout;
-const { SubMenu } = Menu;
+const { Content, Footer } = Layout;
 
 const App = () => {
-  const [collapsed, setCollapsed] = useState(false);
-  const [width, setWidth] = useState(0);
-
   const layoutRef = useRef();
-
-  const onCollapse = (collapsed) => {
-    setCollapsed(collapsed);
-  };
 
   return (
     <Layout style={{ minHeight: "100vh" }} ref={layoutRef}>
