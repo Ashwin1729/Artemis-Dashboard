@@ -51,6 +51,11 @@
   width: 100% !important;
 }
 
+.site-layout {
+  display: flex;
+  justify-content: center;
+}
+
 /* ----------------------- Responsiveness ------------------------ */
 
 @media only screen and (max-width: 768px) {

@@ -4,7 +4,7 @@ import { useCountUp } from "react-countup";
 import styles from "./Balance.module.css";
 import Badge from "../Badge";
 import { Chart, registerables } from "chart.js";
-import { periodDropdown } from "../utilities/utils";
+import { periodDropdown } from "../../utilities/utils";
 import LineChart from "../charts/LineChart";
 import {
   lineMonthLabels,
