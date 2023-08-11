@@ -47,48 +47,8 @@
   padding-right: 5px;
 }
 
-/* -------------------------------------------------- */
-
-.table-row-light {
-  background-color: #ffffff;
-}
-.table-row-dark {
-  background-color: #f0f2f5;
-}
-
-.transaction-wrapper {
-  background: white;
-}
-
-.ant-table-tbody > tr > td,
-.ant-table-thead > tr > th {
-  border: none !important;
-}
-
-.progress {
-  background-color: #3e7aeb;
-  height: 10px;
-  border-radius: 1rem;
-  transition: 1s ease;
-  transition-delay: 0.5s;
-}
-
-.progress-div {
-  background-color: rgb(233, 233, 233);
-  border-radius: 0.5rem;
-}
-
-.balance-head {
-  font-size: calc(1vw + 0.5rem);
-}
-
-.table-main {
-  min-width: 400px;
-  overflow: scroll;
-}
-
-.ant-tabs-nav {
-  margin: 0 !important;
+.ant-tabs-top {
+  width: 100% !important;
 }
 
 /* ----------------------- Responsiveness ------------------------ */
@@ -158,18 +118,4 @@
   .recent-transaction {
     font-size: calc(2vw + 1rem) !important;
   }
-}
-
-.loader {
-  height: 100vh;
-  background: #000000;
-}
-
-.toggle {
-  justify-content: center;
-  margin-top: 5px;
-}
-
-.ant-tabs-top {
-  width: 100% !important;
 }

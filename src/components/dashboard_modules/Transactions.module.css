@@ -1,0 +1,71 @@
+.transaction_layout {
+  width: 100%;
+  background-color: white;
+  margin: 50px 0px 10px 20px;
+  border-radius: 8px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.transaction_heading {
+  font-size: calc(0.8vw + 0.5rem);
+  font-weight: 600;
+}
+
+.export_button {
+  text-align: end;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.2rem;
+  padding: 1px;
+  font-size: small;
+  color: white;
+  font-weight: 400;
+  border-radius: 500px;
+  width: 5rem;
+}
+
+.tab {
+  padding: 0px 10px;
+  margin: 0px 20px;
+}
+
+.row_light {
+  background-color: #ffffff;
+}
+
+.row_dark {
+  background-color: #f0f2f5;
+}
+
+.transaction_table_layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transaction_table {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+@media (max-width: 1024px) {
+  .transaction_table {
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

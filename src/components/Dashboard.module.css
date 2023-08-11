@@ -2,7 +2,8 @@
   margin: 2rem 4rem;
 }
 
-.dashboard_graphs {
+.dashboard_graphs,
+.dashboard_transactions {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,4 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.dashboard_graphs {
+  margin-bottom: 10px;
 }

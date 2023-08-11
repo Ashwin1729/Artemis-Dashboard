@@ -5,6 +5,7 @@ import NewUser from "./dashboard_modules/NewUser";
 import styles from "./Dashboard.module.css";
 import Balance from "./dashboard_modules/Balance";
 import Income from "./dashboard_modules/Income";
+import Transactions from "./dashboard_modules/Transactions";
 
 const Dashboard = () => {
   return (
@@ -22,8 +23,8 @@ const Dashboard = () => {
           <Balance />
         </Col>
       </Row>
-      <Row>
-        <div>Transactions</div>
+      <Row className={styles.dashboard_transactions}>
+        <Transactions />
       </Row>
     </div>
   );
